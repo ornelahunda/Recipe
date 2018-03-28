@@ -48,7 +48,7 @@ $("#submit").on("click", function (event) {
 $("#signIn").on("click", function (event) {
 
     event.preventDefault();
-    
+
     // variables to capture user email and password inputs for use in the signIn method
     email = $("#email").val().trim();
     password = $("#password").val().trim();
@@ -62,10 +62,18 @@ $("#signIn").on("click", function (event) {
         console.log(errorCode);
         console.log(errorMessage);
         console.log("Logged in!");
-
-        
         // ...
     });
+    var user = firebase.auth().currentUser;
+    var name, email, photoUrl, uid, emailVerified;
+
+    if (user != null) {
+        email = user.email;
+        window.location.href='recipePage.html';
+    }
+    else{
+        return;
+    }
     // close account login section===========================
 });
 // Create onClick function to signOut
