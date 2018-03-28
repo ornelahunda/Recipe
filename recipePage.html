@@ -5,16 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Recipe Page</title>
- 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bree+Serif|Josefin+Slab|Prompt" rel="stylesheet">
-   <link href="css/recipepage.css" rel="stylesheet">
-   <link href="javascript/photoSlide.js">
-   <link href="../css/googleMaps.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
   <!-- Let browser know website is optimized for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
 </head>
 
 <body>
@@ -67,41 +63,21 @@
     </div>
     <!-- end of search bar -->
     <!-- carousel -->
-    <div class="carousel">
-      <a class="carousel-item" href="#one!">
-        <img src="https://lorempixel.com/250/250/nature/1">
-      </a>
-      <a class="carousel-item" href="#two!">
-        <img src="https://lorempixel.com/250/250/nature/2">
-      </a>
-      <a class="carousel-item" href="#three!">
-        <img src="https://lorempixel.com/250/250/nature/3">
-      </a>
-      <a class="carousel-item" href="#four!">
-        <img src="https://lorempixel.com/250/250/nature/4">
-      </a>
-      <a class="carousel-item" href="#five!">
-        <img src="https://lorempixel.com/250/250/nature/5">
-      </a>
+    <div class="row">
+      <div class "col s12">
+          <div class="col-12" id="myCarousel">
+      </div>
     </div>
     <!-- end of the carousel -->
-
-    <div class=" container col 2"></div>
     <!-- choosen recipe -->
-   
     <div class="row">
-      <div class="col s10">
+      <div class="col s12">
         <div class="card">
           <div class="card-content blue-grey-text">
             <span class="card-title">
-              <h3>Hot Cross Buns</h3>
+              <h3 id="recipe"></h3>
             </span>
-            <p>Cookie gummi bears croissant ice cream topping gummi bears. Jelly croissant chocolate bar chupa chups icing candy
-              danish. </p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
+            <p id "chef"></p>
           </div>
         </div>
       </div>
@@ -109,40 +85,29 @@
     <!-- end choosen recipe -->
     <!-- ingredients -->
     <div class="row">
-      <div class="col s5">
+      <div class="col s6">
         <div class="collection card with header blue-grey-text">
-          <ul>
-            <li class="collection-header">
-              <h5>Ingredients</h5>
-            </li>
-            <li class="collection-item">Apple pie cookie gingerbread bonbon</li>
-            <li class="collection-item">Oat cake cotton candy</li>
-            <li class="collection-item">Macaroon gummies lemon drops sugar</li>
-            <li class="collection-item">Plum chupa chups dessert halvah bonbon</li>
-            <li class="collection-item"></li>
-          </ul>
+          <h5>Ingredients</h5>
+          <ol id="ingredients">
+            </ul>
         </div>
       </div>
       <!-- end ingredients -->
       <!-- nutrition info -->
-      <div class="col s5">
+      <div class="col s6">
         <div class="card blue-grey-text">
           <span class="card-title">
-            <h5>Nutrition Facts</h5>
+            <h5>Nutrition Info</h5>
           </span>
-          <p>Pudding gummi bears cake gingerbread muffin toffee. Cotton candy cake cake pudding bear claw toffee caramels. Topping
-            donut cake chocolate cake candy sweet pastry bear claw tootsie roll. Cake gummies cake icing lemon drops halvah
-            chocolate bar sesame snaps chocolate. Sweet roll halvah lollipop gummies croissant cotton candy jelly chocolate.
-            Topping marshmallow wafer candy canes chocolate bar dessert cake cupcake. Carrot cake sesame snaps cake tart
-            sweet candy.
-          </p>
+          <ul id="nutrition">
+          </ul>
         </div>
       </div>
     </div>
     <!-- end nutrition info -->
     <!-- directions -->
     <div class="row">
-      <div class="col s10">
+      <div class="col s12">
         <div class="card blue-grey-text">
           <span class="card-title">Directions</span>
           <p>1. Sweet roll chocolate bar sesame snaps cupcake pastry oat cake oat cake gummies. Carrot cake gummi bears croissant.
@@ -162,39 +127,54 @@
       </div>
     </div>
     <!-- end directions -->
-    <div class="container col 2"></div>
     <!-- google maps section -->
-    <div class="row-center">
-      <div  id="map"></div>
-      <p>
-        <button onclick="geoFindMe()">Show grocery stores near your location</button>
-      </p>
-      <div id="out"></div>
-
-    </div>
-    <!-- end google maps section -->
-    <!-- foooter -->
-    <footer class="page-footer orange accent-4 grey-text text-darken-1">
-      <div class="conatiner">
+    <div class="row">
+      <div class="col s12">
+        <h4 class="center">Google Maps</h4>
         <div class="row">
-          <div class="col s12">
-            © 2018 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <div class="col s6">
+            <p>
+              some textvfev efvef vfecdcdwc
+              <br> some textvfev efvef vfecdcdw
+            </p>
+          </div>
+          <div class="col s6 container-center">
+            <div id="map" style="height: 350px; width: 450px; border:10px;"></div>
+            <p>
+              <button onclick="geoFindMe()">Show grocery stores near your location</button>
+            </p>
+            <div id="out"></div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- end footer -->
+    </div>
+  </div>
+  <!-- end google maps section -->
+  <!-- foooter -->
+  <footer class="page-footer orange accent-4 grey-text text-darken-1">
+    <div class="conatiner">
+      <div class="row">
+        <div class="col s12">
+          © 2018 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
- <script src="assets/javascript/googleMaps.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWeXP29EM7UT3Oc4Z75uF7CMFflw1V6I&libraries=places&callback=initMap"></script>
-  <script src="javascript/photoSlide.js"></script>
-  
+  <script src="assets/javascript/photoSlide.js"></script>
+  <script src="assets/javascript/food.js"></script>
+  <script src="assets/javascript/photo.js"></script>
 
-      
+  <script src="assets/javascript/googleMaps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWeXP29EM7UT3Oc4Z75uF7CMFflw1V6I&libraries=places&callback=initMap"></script>
+
+
+
 </body>
 
 
