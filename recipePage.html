@@ -76,86 +76,83 @@
         <div class="col-12" id="myCarousel">
         </div>
       </div>
-      <!-- end of the carousel -->
-      <!-- choosen recipe -->
-      <div class="row">
-        <div class="col s12">
-          <div class="card">
-            <div class="card-content blue-grey-text">
-              <span class="card-title">
-                <h3 id="recipe"></h3>
-              </span>
-              <p id "chef"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end choosen recipe -->
-      <!-- ingredients -->
-      <div class="row">
-        <div class="col s6">
-          <div class="collection card with header blue-grey-text">
-            <h5>Ingredients</h5>
-            <ol id="ingredients">
-              </ol>
-          </div>
-        </div>
-        <!-- end ingredients -->
-        <!-- nutrition info -->
-        <div class="col s6">
-          <div class="card blue-grey-text">
+    </div>
+    <!-- end of the carousel -->
+    <!-- choosen recipe -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content blue-grey-text">
             <span class="card-title">
-              <h5>Nutrition Info</h5>
+              <h3 id="recipe"></h3>
             </span>
-            <ul id="nutrition">
-            </ul>
+            <p id "chef"></p>
           </div>
         </div>
       </div>
-      <!-- end nutrition info -->
-      <!-- directions -->
-      <div class="row">
-        <div class="col s12">
-          <div class="card blue-grey-text">
-            <span class="card-title">Directions</span>
-            <p>1. Sweet roll chocolate bar sesame snaps cupcake pastry oat cake oat cake gummies. Carrot cake gummi bears croissant.
-              Gingerbread chocolate lemon drops lollipop. Cookie sesame snaps danish tart ice cream icing pie gingerbread
-              wafer.
-            </p>
-            <p>
-              2. Oat cake cheesecake gummi bears dessert ice cream cotton candy ice cream jelly beans. Powder brownie pie chocolate cake
-              lollipop apple pie. Dessert tootsie roll lollipop croissant pie chocolate bar jelly beans.
-            </p>
-            <p>3. Candy jelly powder. Pudding biscuit candy canes bear claw. Pudding topping jujubes gummi bears soufflé.
-            </p>
-            <p>
-              4. Lemon drops bonbon cake marzipan muffin danish ice cream biscuit powder. Macaroon macaroon brownie lollipop sesame snaps
-              sesame snaps jujubes donut gingerbread. Lemon drops tart icing candy tootsie roll topping gingerbread.
-            </p>
-          </div>
+    </div>
+    <!-- end choosen recipe -->
+    <!-- ingredients -->
+    <div class="row">
+      <div class="col s6">
+        <div class="collection card with header blue-grey-text">
+          <h5>Ingredients</h5>
+          <ol id="ingredients">
+          </ol>
         </div>
       </div>
-      <!-- end directions -->
-      <!-- google maps section -->
-      <div class="row">
-        <div class="col s12">
-          <h4 class="center">Google Maps</h4>
-          <div class="row">
-            <div class="col s6">
-              <p>
-                some textvfev efvef vfecdcdwc
-                <br> some textvfev efvef vfecdcdw
-              </p>
-            </div>
-            <div class="col s6 container-center">
-              <div id="map" style="height: 350px; width: 450px; border:10px;"></div>
-              <p>
-                <button onclick="geoFindMe()">Show grocery stores near your location</button>
-              </p>
-              <div id="out"></div>
-            </div>
-          </div>
+      <!-- end ingredients -->
+      <!-- nutrition info -->
+      <div class="col s6">
+        <div class="card blue-grey-text">
+          <span class="card-title">
+            <h5>Nutrition Info</h5>
+          </span>
+          <ul id="nutrition">
+          </ul>
         </div>
+      </div>
+    </div>
+    <!-- end nutrition info -->
+    <!-- directions -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card blue-grey-text">
+          <span class="card-title">Directions</span>
+          <p>1. Sweet roll chocolate bar sesame snaps cupcake pastry oat cake oat cake gummies. Carrot cake gummi bears croissant.
+            Gingerbread chocolate lemon drops lollipop. Cookie sesame snaps danish tart ice cream icing pie gingerbread wafer.
+          </p>
+          <p>
+            2. Oat cake cheesecake gummi bears dessert ice cream cotton candy ice cream jelly beans. Powder brownie pie chocolate cake
+            lollipop apple pie. Dessert tootsie roll lollipop croissant pie chocolate bar jelly beans.
+          </p>
+          <p>3. Candy jelly powder. Pudding biscuit candy canes bear claw. Pudding topping jujubes gummi bears soufflé.
+          </p>
+          <p>
+            4. Lemon drops bonbon cake marzipan muffin danish ice cream biscuit powder. Macaroon macaroon brownie lollipop sesame snaps
+            sesame snaps jujubes donut gingerbread. Lemon drops tart icing candy tootsie roll topping gingerbread.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end directions -->
+    <!-- google maps section -->
+    <div class="row">
+      <div class="col s6">
+        <h4 class="center">Google Maps</h4>
+        <hr>
+        <div id="map" style="height: 350px; width: 450px; border:10px;"></div>
+        <p>
+          <button onclick="geoFindMe()">Show grocery stores near your location</button>
+        </p>
+        <div id="out"></div>
+      </div>
+      <div class="col s6">
+        <h4 class="center">Recent Random Recipe</h4>
+        <hr>
+        <div class="recent"></div>
+        <br>
+        </p>
       </div>
     </div>
     <!-- end google maps section -->
@@ -171,18 +168,16 @@
       </div>
     </footer>
     <!-- end footer -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <script src="assets/javascript/food.js"></script>
+    <script src="assets/javascript/photo.js"></script>
+<script src="assets/javascript/recent.js"></script>
+    <script src="assets/javascript/googleMaps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWeXP29EM7UT3Oc4Z75uF7CMFflw1V6I&libraries=places&callback=initMap"></script>
+
   </div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
-  <script src="assets/javascript/food.js"></script>
-  <script src="assets/javascript/photo.js"></script>
-
-  <script src="assets/javascript/googleMaps.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWeXP29EM7UT3Oc4Z75uF7CMFflw1V6I&libraries=places&callback=initMap"></script>
-
-
-
 </body>
 
 
