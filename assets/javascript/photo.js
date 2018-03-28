@@ -1,12 +1,13 @@
 $(document).ready(function () {
-    $('.carousel').carousel();
+    $('.carousel').carousel();  
 });
 
 
-$(document).ready(function () {
+
 
    $("#find-recipe").on("click", function () {
-    var photo = $("#searched-text").val;
+    
+    var photo = $("#searched-text").val();
     
         var queryUrl = "https://pixabay.com/api/?key=8461570-232e401d48810814e19e97b4c&q=" +
             photo + "&image_type=photo";
@@ -27,9 +28,10 @@ $(document).ready(function () {
             //for each item in results (create a for loop to loop try our results array)
             // create a divCarousal
             var divCarousel = $("<div class='carousel'>");
+            $('#myCarousel').empty();
             $("#myCarousel").append(divCarousel);
             // console.log(divCarousel);
-
+          
             for (i = 0; i < hrefArray.length; i++) {
                 var aTag = $("<a class='carousel-item'>");
                 aTag.attr("href", hrefArray[i]);
@@ -40,10 +42,9 @@ $(document).ready(function () {
                 imgTag.attr("src", results[i].largeImageURL);
                 aTag.append(imgTag).img;
                 // console.log(imgTag.img);
-
+    
             }
-     }); 
-
-        $('.carousel').carousel(); 
+            $('.carousel').carousel(); 
+            
+     });   
  });
-});
