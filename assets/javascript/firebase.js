@@ -46,6 +46,9 @@ $("#submit").on("click", function (event) {
 });
 // Create onClick function to house account login section
 $("#signIn").on("click", function (event) {
+
+    event.preventDefault();
+    
     // variables to capture user email and password inputs for use in the signIn method
     email = $("#email").val().trim();
     password = $("#password").val().trim();
