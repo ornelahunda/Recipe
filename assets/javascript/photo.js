@@ -10,7 +10,7 @@ $(document).ready(function () {
     var photo = $("#searched-text").val();
     
         var queryUrl = "https://pixabay.com/api/?key=8461570-232e401d48810814e19e97b4c&q=" +
-            photo + "&image_type=photo";
+           photo + "&image_type=photo";
 
         var cors_api_url = "https://cors-anywhere.herokuapp.com/";
         var cors_url = cors_api_url + queryUrl;
@@ -22,12 +22,12 @@ $(document).ready(function () {
 
             console.log(results);
 
-            var hrefArray = ["#one!", "#two!", "#three!", "#four!", "#five!"]
+            var hrefArray = ["#one!", "#two!", "#three!", "#four!", "#five!","#six!","#seven!","#eight!","#nine!","#ten!"];
             // console.log(hrefArray);
 
             //for each item in results (create a for loop to loop try our results array)
             // create a divCarousal
-            var divCarousel = $("<div class='carousel'>");
+            var divCarousel = $("<div class='carousel' style='width:100%'>");
             $('#myCarousel').empty();
             $("#myCarousel").append(divCarousel);
             // console.log(divCarousel);
@@ -41,6 +41,7 @@ $(document).ready(function () {
                 var imgTag = $("<img style='height=100px; width=100px;'>");
                 imgTag.attr("src", results[i].largeImageURL);
                 aTag.append(imgTag).img;
+                imgTag.addClass("foodImage");
                 // console.log(imgTag.img);
     
             }

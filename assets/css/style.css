@@ -1,3 +1,16 @@
 #map{
     text-align: center;
 }
+.carousel-item{
+    padding: 10px;  
+    margin-top: -150px;
+    
+}
+.myCarousel{
+ width:100%;
+}
+.foodImage{
+    height:400px;
+   
+  
+}

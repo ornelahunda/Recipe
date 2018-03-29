@@ -21,13 +21,13 @@
         <a href="#" class="brand-logo">Recipe Master</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a href="sass.html">Home</a>
+            <a href="recipePage.html">Home</a>
           </li>
           <li>
-            <a href="badges.html">Reciepes</a>
+            <a href="recipePage.html">Reciepes</a>
           </li>
           <li>
-            <a href="collapsible.html">Log In</a>
+            <a href="index.html">Log Out</a>
           </li>
           <!-- Dropdown Trigger -->
           <li>
@@ -72,9 +72,7 @@
     <!-- end of search bar -->
     <!-- carousel -->
     <div class="row">
-      <div class "col s12">
-        <div class="col-12" id="myCarousel">
-        </div>
+      <div id="myCarousel" style="width:100%;">
       </div>
     </div>
     <!-- end of the carousel -->
@@ -118,30 +116,21 @@
     <div class="row">
       <div class="col s12">
         <div class="card blue-grey-text">
-          <span class="card-title">Directions</span>
-          <p>1. Sweet roll chocolate bar sesame snaps cupcake pastry oat cake oat cake gummies. Carrot cake gummi bears croissant.
-            Gingerbread chocolate lemon drops lollipop. Cookie sesame snaps danish tart ice cream icing pie gingerbread wafer.
-          </p>
-          <p>
-            2. Oat cake cheesecake gummi bears dessert ice cream cotton candy ice cream jelly beans. Powder brownie pie chocolate cake
-            lollipop apple pie. Dessert tootsie roll lollipop croissant pie chocolate bar jelly beans.
-          </p>
-          <p>3. Candy jelly powder. Pudding biscuit candy canes bear claw. Pudding topping jujubes gummi bears soufflé.
-          </p>
-          <p>
-            4. Lemon drops bonbon cake marzipan muffin danish ice cream biscuit powder. Macaroon macaroon brownie lollipop sesame snaps
-            sesame snaps jujubes donut gingerbread. Lemon drops tart icing candy tootsie roll topping gingerbread.
-          </p>
+          <h5>Directions</h5>
+          <div class="directions">
+            <iframe id="iframeDirections" >
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
     <!-- end directions -->
     <!-- google maps section -->
     <div class="row">
-      <div class="col s6">
+      <div class="col s6 center">
         <h4 class="center">Google Maps</h4>
         <hr>
-        <div id="map" style="height: 350px; width: 450px; border:10px;"></div>
+        <div id="map" style="height: 350px; width: 650px; border:10px;"></div>
         <p>
           <button onclick="geoFindMe()">Show grocery stores near your location</button>
         </p>
@@ -173,7 +162,7 @@
 
     <script src="assets/javascript/food.js"></script>
     <script src="assets/javascript/photo.js"></script>
-<script src="assets/javascript/recent.js"></script>
+    <script src="assets/javascript/recent.js"></script>
     <script src="assets/javascript/googleMaps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXWeXP29EM7UT3Oc4Z75uF7CMFflw1V6I&libraries=places&callback=initMap"></script>
 

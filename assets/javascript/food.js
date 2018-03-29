@@ -1,4 +1,4 @@
-var food="";
+var food = "";
 //onclick function with the search bar
 $("#find-recipe").on("click", function (event) {
 
@@ -9,8 +9,8 @@ $("#find-recipe").on("click", function (event) {
   event.preventDefault();
 
   // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
- food = $("#searched-text").val();
-  var foodURL = "https://api.edamam.com/search?q=" +food+ "&app_id=e074d398&app_key=c8fd43f5044c655732878dee8b34a346";
+  food = $("#searched-text").val();
+  var foodURL = "https://api.edamam.com/search?q=" + food + "&app_id=e074d398&app_key=c8fd43f5044c655732878dee8b34a346";
   //CORS workaround so we can access data
   var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
   var queryURL = cors_api_url + foodURL;
@@ -34,6 +34,13 @@ $("#find-recipe").on("click", function (event) {
     $("#recipe").text(x.label);
     //update chef credit
     $("#chef").text("Recipe from: " + x.source);
-    });
- 
+
+    //update directions on recipe
+
+    var a = x.url;
+    $("#iframeDirections").attr("scr", a);
+
+
+  });
+
 });
